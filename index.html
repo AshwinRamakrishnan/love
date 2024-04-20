@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="image.jpg" alt="YI Chatbot" class="chatbot-icon">
+  <h1>Yi Chatbot</h1>
+</div>
+
+<div class="chat-container">
+  <div class="chat-box" id="chat-box">
+    <div class="chat-message bot-message">
+      <p>Welcome to our website. How can I help you?</p>
+    </div>
+  </div>
+  <input type="text" class="chat-input" id="user-input" placeholder="Type your message...">
+  <button id="voice-button" class="voice-button">Voice Input</button>
+  <input type="file" id="image-upload" accept="image/*">
+  <video id="webcam" autoplay muted></video>
+  <canvas id="output" width="320" height="240"></canvas>
+  <button id="hand-sign-button" class="voice-button">Hand Sign Input</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+

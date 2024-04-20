@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Text color */
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.chatbot-icon {
+  max-width: 60px; /* Adjust the size as per your requirement */
+}
+
+.chat-container {
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #333; /* Chat container background color */
+  position: relative; /* Needed for webcam and hand sign button */
+}
+
+.chat-box {
+  height: 300px; /* Reduced height to accommodate webcam */
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.chat-input {
+  width: calc(100% - 50px);
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #444; /* Input field background color */
+  color: #fff; /* Input field text color */
+}
+
+.voice-button, #image-upload, #hand-sign-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer;
+  margin: 10px;
+}
+
+.voice-button:hover, #image-upload:hover, #hand-sign-button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+.chat-input:focus {
+  outline: none;
+}
+
+.send-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #fff; /* Send icon color */
+}
+
+.chat-message {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bot-message {
+  background-color: #555; /* Bot message background color */
+  color: #fff; /* Bot message text color */
+  max-width: 70%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.user-message {
+  background-color: #0c0017; /* Purple background */
+  color: white;
+  max-width: 70%;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Webcam and hand sign button styles */
+#webcam {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#output {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: none; /* Hidden by default */
+}
+
+#hand-sign-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+  
+  
